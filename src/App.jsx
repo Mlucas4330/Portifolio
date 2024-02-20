@@ -242,9 +242,9 @@ const App = () => {
                                     <Image src={NinjaSena} />
                                     <Heading textAlign={'center'}>NinjaSena</Heading>
                                     <Text textAlign={'center'}>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur sint itaque corrupti
-                                        minus. Quae ab sed veniam laboriosam, voluptates optio magnam quaerat asperiores? Nesciunt quas
-                                        explicabo id accusantium eveniet.
+                                        Construído utilizando React e Node. NinjaSena é um sorteio online onde os usuários podem depositar
+                                        dinheiro real para participar. A cada 24 horas, o montante depositado é sorteado entre os jogadores.
+                                        O vencedor recebe o valor total por Pix.
                                     </Text>
                                 </CardBody>
                                 <CardFooter>
