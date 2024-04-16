@@ -15,7 +15,7 @@ import {
     IconButton,
     Card,
     CardBody,
-    CardFooter,
+    CardFooter
 } from '@chakra-ui/react'
 import Habilidade from './components/Habilidade'
 import NinjaSena from './assets/ninjasena.jpg'
@@ -40,63 +40,63 @@ const App = () => {
             name: 'Javascript',
             bgColor: 'yellow.300',
             color: 'black',
-            icon: IoLogoJavascript,
+            icon: IoLogoJavascript
         },
         {
             name: 'React',
             bgColor: 'blue.500',
-            icon: FaReact,
+            icon: FaReact
         },
         {
             name: 'Node',
             bgColor: 'green.400',
-            icon: FaNodeJs,
+            icon: FaNodeJs
         },
         {
             name: 'Express',
             bgColor: 'green.400',
-            icon: SiExpress,
+            icon: SiExpress
         },
         {
             name: 'PHP',
             bgColor: 'blue.700',
-            icon: SiPhp,
+            icon: SiPhp
         },
         {
             name: 'Postgres',
             bgColor: 'blue.700',
-            icon: DiPostgresql,
+            icon: DiPostgresql
         },
         {
             name: 'MySQL',
             bgColor: 'blue.400',
-            icon: SiMysql,
+            icon: SiMysql
         },
         {
             name: 'Git',
             bgColor: 'black',
-            icon: FaGitAlt,
+            icon: FaGitAlt
         },
         {
             name: 'Github',
             bgColor: 'black',
-            icon: FaGithub,
+            icon: FaGithub
         },
         {
             name: 'Nginx',
             bgColor: 'green.600',
-            icon: SiNginx,
+            icon: SiNginx
         },
         {
             name: 'Docker',
             bgColor: 'blue.600',
-            icon: FaDocker,
+            icon: FaDocker
         },
         {
             name: 'Docker Compose',
             bgColor: 'blue.600',
-            icon: FaDocker,
-        },
+            icon: FaDocker
+        }
     ]
 
     return (
@@ -110,7 +110,7 @@ const App = () => {
                     templateColumns={{
                         sm: '1fr',
                         md: '1fr',
-                        lg: '1fr 1fr',
+                        lg: '1fr 1fr'
                     }}
                     id='inicio'
                     justifyItems={'center'}
@@ -128,7 +128,7 @@ const App = () => {
                             <IconButton
                                 bgColor={'blue.700'}
                                 _hover={{
-                                    backgroundColor: 'blue.800',
+                                    backgroundColor: 'blue.800'
                                 }}
                                 color={'white'}
                                 as={'a'}
@@ -139,7 +139,7 @@ const App = () => {
                             <IconButton
                                 bgColor={'blue.700'}
                                 _hover={{
-                                    backgroundColor: 'blue.800',
+                                    backgroundColor: 'blue.800'
                                 }}
                                 color={'white'}
                                 as={'a'}
@@ -151,7 +151,7 @@ const App = () => {
                             <IconButton
                                 bgColor={'blue.700'}
                                 _hover={{
-                                    backgroundColor: 'blue.800',
+                                    backgroundColor: 'blue.800'
                                 }}
                                 color={'white'}
                                 as={'a'}
@@ -171,12 +171,10 @@ const App = () => {
                     <Grid
                         mt={10}
                         templateColumns={{
-                            sm: '1fr',
-                            md: '1fr',
-                            lg: '1fr 1fr',
+                            base: '1fr',
+                            lg: '1fr 1fr 1fr'
                         }}
                         gap={10}
-                        justifyItems={'center'}
                     >
                         <GridItem>
                             <Heading>Desenvolvedor Full Stack</Heading>
@@ -222,6 +220,16 @@ const App = () => {
                                 </ListItem>
                             </UnorderedList>
                         </GridItem>
+                        <GridItem>
+                            <Heading>Desenvolvedor Full Stack</Heading>
+                            <Heading color={'gray.500'} size={'sm'} as={'h3'}>
+                                Growdev | 03/2023 - Atualmente
+                            </Heading>
+                            <UnorderedList>
+                                <ListItem>Prestador de serviços para empresa terceirizada.</ListItem>
+                                <ListItem>Responsável por desenvolver e manter software de intermediação de pagamentos.</ListItem>
+                            </UnorderedList>
+                        </GridItem>
                     </Grid>
                 </Box>
 
@@ -231,16 +239,16 @@ const App = () => {
                     <Grid
                         mt={10}
                         templateColumns={{
-                            sm: '1fr',
+                            base: '1fr',
                             md: '1fr 1fr',
-                            lg: '1fr 1fr 1fr',
+                            lg: '1fr 1fr 1fr'
                         }}
+                        gap={10}
                     >
                         <GridItem>
                             <Card>
                                 <CardBody>
-                                    <Image src={NinjaSena} />
-                                    <Heading textAlign={'center'}>NinjaSena</Heading>
+                                    <Heading>NinjaSena</Heading>
                                     <Text textAlign={'center'}>
                                         Construído utilizando React e Node. NinjaSena é um sorteio online onde os usuários podem depositar
                                         dinheiro real para participar. A cada 24 horas, o montante depositado é sorteado entre os jogadores.
@@ -251,11 +259,59 @@ const App = () => {
                                     <Button
                                         bgColor={'blue.700'}
                                         _hover={{
-                                            backgroundColor: 'blue.800',
+                                            backgroundColor: 'blue.800'
                                         }}
                                         color={'white'}
                                         as={'a'}
                                         href='https://www.ninjasena.online'
+                                        target='_blank'
+                                    >
+                                        Visualizar Projeto
+                                    </Button>
+                                </CardFooter>
+                            </Card>
+                        </GridItem>
+                        <GridItem>
+                            <Card>
+                                <CardBody>
+                                    <Heading>Gerador de imagem</Heading>
+                                    <Text textAlign={'center'}>
+                                        Construído utilizando React, Node e APIs de geração de imagem através de Inteligência Artificial.
+                                    </Text>
+                                </CardBody>
+                                <CardFooter>
+                                    <Button
+                                        bgColor={'blue.700'}
+                                        _hover={{
+                                            backgroundColor: 'blue.800'
+                                        }}
+                                        color={'white'}
+                                        as={'a'}
+                                        href='https://main.dau18cobre6u8.amplifyapp.com/'
+                                        target='_blank'
+                                    >
+                                        Visualizar Projeto
+                                    </Button>
+                                </CardFooter>
+                            </Card>
+                        </GridItem>
+                        <GridItem>
+                            <Card>
+                                <CardBody>
+                                    <Heading textAlign={'center'}>URL Shortening</Heading>
+                                    <Text textAlign={'center'}>
+                                        Landing page construída utilizando React e APIs de encurtamento de URLs.
+                                    </Text>
+                                </CardBody>
+                                <CardFooter>
+                                    <Button
+                                        bgColor={'blue.700'}
+                                        _hover={{
+                                            backgroundColor: 'blue.800'
+                                        }}
+                                        color={'white'}
+                                        as={'a'}
+                                        href='https://main.d3iswo5odfvwd2.amplifyapp.com/'
                                         target='_blank'
                                     >
                                         Visualizar Projeto
@@ -272,7 +328,7 @@ const App = () => {
                         templateColumns={{
                             base: '1fr',
                             sm: '1fr 1fr',
-                            md: '1fr 1fr 1fr',
+                            md: '1fr 1fr 1fr'
                         }}
                         mt={10}
                         gap={3}
@@ -288,3 +344,4 @@ const App = () => {
 }
 
 export default App
+
